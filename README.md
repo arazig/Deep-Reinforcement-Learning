@@ -84,6 +84,49 @@ Results and training curves are saved in the `results/` directory. Use the provi
   - `torch` (PyTorch for neural networks)  
   - `tensorboard` (for logging)  
 - **Optional**: GPU for accelerated training.  
+## Atari Experiments
+This folder contains our implementation of Rainbow DQN specifically for Atari environments.
+## Requirements  
+- **Python 3.11** 
+
+### Project Files
+- `atari_network.py`: Neural network architecture for the Atari agents
+- `atari_rainbow.py`: Implementation of Rainbow algorithm adapted for Atari games
+- `atari_wrapper.py`: Custom wrappers for processing Atari environments (frame stacking, reward clipping, etc.)
+- `video.py`: Utilities for recording trained agent gameplay
+- `vis.py`: Visualization tools for analyzing agent performance
+
+### Running Atari Experiments
+To train a Rainbow agent on an Atari game:
+```bash
+python atari_rainbow.py 
+```
+
+Available game options include:
+- Pong
+- Breakout
+- SpaceInvaders
+- Seaquest
+- And other Atari environments
+
+### Visualizing Results
+To visualize training progress:
+```bash
+python vis.py 
+```
+
+### Recording Agent Gameplay
+To record videos of a trained agent:
+```bash
+python video.py 
+```
+
+### Implementation Notes
+- Our implementation uses frame stacking (4 frames) as input to capture temporal information
+- We use the standard Atari preprocessing: grayscale conversion, frame skipping, etc.
+- The network architecture follows the original DQN design with modifications for Rainbow components
+- Experiments were run using Python 3.11 in a virtual environment
+
 
 ## References  
 - Matteo Hessel, Joseph Modayil, Hado van Hasselt, Tom Schaul, Georg Ostrovski, Will Dabney, Dan Horgan, Bilal Piot, Mohammad Azar, David Silver. *Rainbow: Combining Improvements in Deep Reinforcement Learning*. 2017.  
