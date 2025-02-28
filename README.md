@@ -144,8 +144,7 @@ python video.py
 - The Ms. Pacman environment presents unique challenges due to its complex maze navigation, ghost avoidance, and pellet collection strategies
 
 ### Acknowledgements
-We would like to acknowledge the [Tianshou](https://github.com/thu-ml/tianshou) library, which provided the foundation for our implementation. Tianshou is a flexible, modular, and well-documented reinforcement learning platform. Our code adapts and builds upon their excellent work.
-As well [Rainbow-is-all-you-need](https://github.com/Curt-Park/rainbow-is-all-you-need?tab=readme-ov-file) and the Rainbow repo. 
+We would like to acknowledge the [Tianshou](https://github.com/thu-ml/tianshou) library, which provided the foundation for our implementation. Tianshou is a flexible, modular, and well-documented reinforcement learning platform. Our code adapts and builds upon their excellent work ,as well as [Rainbow-is-all-you-need](https://github.com/Curt-Park/rainbow-is-all-you-need?tab=readme-ov-file) and the Rainbow repo. 
 
 ## References  
 - Matteo Hessel, Joseph Modayil, Hado van Hasselt, Tom Schaul, Georg Ostrovski, Will Dabney, Dan Horgan, Bilal Piot, Mohammad Azar, David Silver. *Rainbow: Combining Improvements in Deep Reinforcement Learning*. 2017.  
