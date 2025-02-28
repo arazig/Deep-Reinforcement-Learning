@@ -49,6 +49,9 @@ git clone https://github.com/arazig/Deep-Reinforcement-Learning.git
 cd Rainbow-DRL 
 ```  
 
+> **:warning: Attention:** There are two folders in this directory, labeled (1) and (2). The experiments are separate, with each folder having its own `requirements.txt` file.
+
+
 ### Step 2: Install Dependencies  
 ```bash  
 pip install -r requirements.txt  
@@ -56,24 +59,22 @@ pip install -r requirements.txt
 
 ### Step 3: Run Experiments  
 
-#### Full Rainbow Implementation  
-```bash  
-XXXXXXXXXXXXX  
+#### Full Rainbow Implementation
+```bash
+ .py files on folder (1)-Experiments
 ```  
 
 #### Ablation Studies  
-To run ablation studies, use the following command:  
+To run ablation studies, use the following Notebook:  
 ```bash  
-python ablation_study.py --component "double_q"  
+Notebook_experiments.ipynb
 ```  
-Replace `"double_q"` with the component you want to isolate (e.g., `"prioritized_replay"`, `"dueling"`, etc.).  
+Replace `"no_....."` components with the component you want to isolate (e.g., `"prioritized_replay"`, `"dueling"`, etc.).  
 
 ### Step 4: Visualize Results  
-Results and training curves are saved in the `results/` directory. Use the provided notebooks to visualize and analyze the results:  
-- `results_analysis.ipynb`: For analyzing full Rainbow performance.  
-- `ablation_analysis.ipynb`: For analyzing ablation study results.  
+Results and training curves are provided notebooks to visualize and analyze the results:  
 
-## Requirements  
+## Requirements  ( cf requierements)
 - **Python 3.8+**  
 - Libraries:  
   - `numpy`  
@@ -83,7 +84,8 @@ Results and training curves are saved in the `results/` directory. Use the provi
   - `gym` (Atari environments)  
   - `torch` (PyTorch for neural networks)  
   - `tensorboard` (for logging)  
-- **Optional**: GPU for accelerated training.  
+- **Optional**: GPU for accelerated training.
+- 
 ## Atari Experiments
 This folder contains our implementation of Rainbow DQN specifically for Atari environments, with a focus on Ms. Pacman. Our implementation is based on and adapted from the [Tianshou](https://github.com/thu-ml/tianshou) reinforcement learning library. Note that this implementation requires its own setup distinct from the main project.
 
