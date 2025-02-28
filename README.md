@@ -8,6 +8,14 @@ This project implements and evaluates the **Rainbow** algorithm, a combination o
    ▪️ **`Amine RAZIG`**
    ▪️ **`Yassine OJ`**
 
+<p align="center">
+   
+  <img src="pacman.gif" width="20%" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="lunarlander.gif" width="25%" />
+   
+</p>
+
+
 ## Table of Contents  
 1. [Objective](#objective)  
 2. [Rainbow Components](#rainbow-components)  
