@@ -142,7 +142,7 @@ python video.py
 - The Ms. Pacman environment presents unique challenges due to its complex maze navigation, ghost avoidance, and pellet collection strategies
 
 ### Acknowledgements
-We would like to acknowledge the [Tianshou](https://github.com/thu-ml/tianshou) library, which provided the foundation for our implementation. Tianshou is a flexible, modular, and well-documented reinforcement learning platform developed by researchers at Tsinghua University. Our code adapts and builds upon their excellent work.
+We would like to acknowledge the [Tianshou](https://github.com/thu-ml/tianshou) library, which provided the foundation for our implementation. Tianshou is a flexible, modular, and well-documented reinforcement learning platform. Our code adapts and builds upon their excellent work.
 
 
 ## References  
