@@ -85,24 +85,36 @@ Results and training curves are saved in the `results/` directory. Use the provi
   - `tensorboard` (for logging)  
 - **Optional**: GPU for accelerated training.  
 ## Atari Experiments
-This folder contains our implementation of Rainbow DQN specifically for Atari environments.
-## Requirements  
-- **Python 3.11** 
+This folder contains our implementation of Rainbow DQN specifically for Atari environments, with a focus on Ms. Pacman. Our implementation is based on and adapted from the [Tianshou](https://github.com/thu-ml/tianshou) reinforcement learning library. Note that this implementation requires its own setup distinct from the main project.
+
+### Environment Setup for Atari
+- **Python Version**: This implementation requires **Python 3.11** specifically
+- **Virtual Environment**: We recommend creating a dedicated virtual environment:
+  ```bash
+  python3.11 -m venv atari_env
+  source atari_env/bin/activate  # On Windows: atari_env\Scripts\activate
+  ```
+- **Dependencies**: Install the required packages from the requirements.txt file in the atari folder:
+  ```bash
+  cd atari_experiments
+  pip install -r requirements.txt
+  ```
 
 ### Project Files
-- `atari_network.py`: Neural network architecture for the Atari agents
+- `atari_network.py`: Neural network architecture for the Atari agents (adapted from Tianshou)
 - `atari_rainbow.py`: Implementation of Rainbow algorithm adapted for Atari games
 - `atari_wrapper.py`: Custom wrappers for processing Atari environments (frame stacking, reward clipping, etc.)
 - `video.py`: Utilities for recording trained agent gameplay
 - `vis.py`: Visualization tools for analyzing agent performance
 
 ### Running Atari Experiments
-To train a Rainbow agent on an Atari game:
+To train a Rainbow agent on Ms. Pacman:
 ```bash
 python atari_rainbow.py 
 ```
 
-Available game options include:
+While our primary focus is on Ms. Pacman, the implementation supports other Atari games as well:
+- MsPacman
 - Pong
 - Breakout
 - SpaceInvaders
@@ -126,6 +138,11 @@ python video.py
 - We use the standard Atari preprocessing: grayscale conversion, frame skipping, etc.
 - The network architecture follows the original DQN design with modifications for Rainbow components
 - Experiments were run using Python 3.11 in a virtual environment
+- This implementation is specifically optimized for Atari environments with particular focus on Ms. Pacman
+- The Ms. Pacman environment presents unique challenges due to its complex maze navigation, ghost avoidance, and pellet collection strategies
+
+### Acknowledgements
+We would like to acknowledge the [Tianshou](https://github.com/thu-ml/tianshou) library, which provided the foundation for our implementation. Tianshou is a flexible, modular, and well-documented reinforcement learning platform developed by researchers at Tsinghua University. Our code adapts and builds upon their excellent work.
 
 
 ## References  
